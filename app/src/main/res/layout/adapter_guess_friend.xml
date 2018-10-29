@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_adapter_guess_friend_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/ll_guess_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_guess_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:button="@null"
+            android:background="@drawable/custom_checkbox"
+            android:padding="5dp"
+            android:scaleType="center" />
+
+        <com.app.noknok.customviews.MediumTextView
+            android:id="@+id/txt_guess_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="TextView"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

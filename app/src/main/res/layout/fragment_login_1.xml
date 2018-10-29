@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_registration_form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_registration_form_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/reg_round_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_full_name_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <com.app.noknok.customviews.RegularTextView
+                    android:id="@+id/tv_iam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/i_am"
+                    android:textColor="@color/white" />
+
+                <com.app.noknok.customviews.BoldEditText
+                    android:id="@+id/et_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_round_corner"
+                    android:hint="@string/your_full_name"
+                    android:textAllCaps="true"
+                    android:inputType="textCapCharacters"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:padding="10dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_phone_number_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <com.app.noknok.customviews.RegularTextView
+                    android:id="@+id/tv_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/my_phone_number"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.app.noknok.customviews.BoldTextView
+                        android:id="@+id/tv_country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_round_corner"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="+234"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2" />
+
+                    <com.app.noknok.customviews.BoldEditText
+                        android:id="@+id/et_enter_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/edit_text_round_corner"
+                        android:hint="@string/enter"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.app.noknok.customviews.BoldTextView
+            android:id="@+id/tv_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bt_round_background"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

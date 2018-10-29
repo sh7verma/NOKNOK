@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "794343836432",
+    "firebase_url": "https://noknok-682d4.firebaseio.com",
+    "project_id": "noknok-682d4",
+    "storage_bucket": "noknok-682d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794343836432:android:89e82a48fa41cac7",
+        "android_client_info": {
+          "package_name": "com.app.noknok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794343836432-37ge04amp3ie03lprjb1a8ehkqqhgp8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.noknok",
+            "certificate_hash": "fbf8076e43f99e94f3445c18227b286ca48b2685"
+          }
+        },
+        {
+          "client_id": "794343836432-3kffnmt8of60dg4d0tig7ck0p496n9jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH-gk4PQXO4sZNa5MYK0ikE_Kc6hGkoHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794343836432-ue2fg16lih1rjgic5g6o8b2clg28ngak.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.NokNok"
+              }
+            },
+            {
+              "client_id": "794343836432-3kffnmt8of60dg4d0tig7ck0p496n9jh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

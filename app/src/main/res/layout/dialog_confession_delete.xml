@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/rl_confession_delete_main_container"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_confession_delete_circle_main_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_confession_delete_circle_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_confession_delete_circle"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/black_circular_background"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_confession_type_delete_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <com.app.noknok.customviews.RegularTextView
+                        android:id="@+id/tv_confession_delete_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="Are you Sure ?"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_options_delete_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical">
+
+                    <com.app.noknok.customviews.BoldTextView
+                        android:id="@+id/tv_confession_delete_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DELETE"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <com.app.noknok.customviews.BoldTextView
+                        android:id="@+id/tv_confession_delete_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CANCEL"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_confession_delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ill_discard" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

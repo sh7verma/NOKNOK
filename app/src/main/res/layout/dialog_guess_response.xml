@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_guess_response_main_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_guess_response_circle_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_guess_response_circle"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/black_circular_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_guess_response_text_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.app.noknok.customviews.BoldTextView
+                        android:id="@+id/tv_guess_response_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/sorry"
+                        android:textSize="18sp"
+                        android:layout_marginTop="60dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"/>
+
+                    <com.app.noknok.customviews.RegularTextView
+                        android:id="@+id/tv_guess_response_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/you_guessed_it_wrong"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_guess_response_options_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:weightSum="2"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical">
+
+                    <com.app.noknok.customviews.BoldTextView
+                        android:id="@+id/tv_guess_response_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/reply"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+
+
+                    <com.app.noknok.customviews.BoldTextView
+                        android:id="@+id/tv_guess_response_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="CANCEL"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_guess_response_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ill_right_guess" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

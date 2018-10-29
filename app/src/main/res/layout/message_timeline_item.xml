@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_message_thread_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/ll_message_thread_line_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_message_thread_line_container"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/iv_message_thread_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_message_thread_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_message_thread_circular_dot"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dot_green"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+
+        <com.app.noknok.customviews.MediumTextView
+            android:id="@+id/tv_message_timeline_right_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ll_message_thread_circular_dot"
+            android:layout_toRightOf="@+id/ll_message_thread_circular_dot"
+            android:text="@string/you"
+            android:textSize="15dp" />
+
+        <com.app.noknok.customviews.MediumTextView
+            android:id="@+id/tv_message_timeline_right_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message_timeline_right_name"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ll_message_thread_circular_dot"
+            android:layout_toRightOf="@+id/ll_message_thread_circular_dot"
+
+            android:text="10:30 pm"
+            android:textColor="@color/grey"
+            android:textSize="10dp" />
+
+
+        <com.app.noknok.customviews.MediumTextView
+            android:id="@+id/tv_message_timeline_left_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:layout_toLeftOf="@+id/ll_message_thread_circular_dot"
+            android:layout_toStartOf="@+id/ll_message_thread_circular_dot"
+            android:text="fgregregergreg regytretgretgretgre"
+            android:textSize="15dp" />
+
+        <com.app.noknok.customviews.MediumTextView
+            android:id="@+id/tv_message_timeline_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_below="@+id/tv_message_timeline_left_name"
+            android:layout_toLeftOf="@+id/ll_message_thread_circular_dot"
+            android:layout_toStartOf="@+id/ll_message_thread_circular_dot"
+
+            android:text="10:30 pm"
+            android:textColor="@color/grey"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

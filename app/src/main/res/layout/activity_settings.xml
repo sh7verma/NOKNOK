@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_cancel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_close_new" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp">
+
+        <com.app.noknok.customviews.BoldTextView
+            android:id="@+id/txt_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/txt_settings"
+            android:layout_alignRight="@+id/txt_settings"
+            android:layout_below="@+id/txt_settings"
+            android:layout_marginTop="5dp"
+            android:background="@color/pink" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/realtive_title"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/notifications" />
+
+            <com.app.noknok.customviews.MediumTextView
+                android:id="@+id/tv_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_notifications"
+                android:text="@string/notifications" />
+
+            <Switch
+                android:id="@+id/sw_setting_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_notifications"
+                android:layout_below="@+id/img_notifications"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_settings_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_aboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/about" />
+
+            <com.app.noknok.customviews.MediumTextView
+                android:id="@+id/tv_aboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_aboutUs"
+                android:text="@string/about_us" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right_new" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_aboutUs"
+                android:layout_below="@+id/img_aboutUs"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_settings_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/terms" />
+
+            <com.app.noknok.customviews.MediumTextView
+                android:id="@+id/tv_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_terms"
+                android:text="@string/terms_conditions" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right_new" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_terms"
+                android:layout_below="@+id/img_terms"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_settings_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_privacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/privacy" />
+
+            <com.app.noknok.customviews.MediumTextView
+                android:id="@+id/tv_privacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_privacyPolicy"
+                android:text="@string/privacy_policy" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right_new" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_privacyPolicy"
+                android:layout_below="@+id/img_privacyPolicy"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_settings_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/feedback" />
+
+            <com.app.noknok.customviews.MediumTextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_feedback"
+                android:text="@string/feedback" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right_new" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_feedback"
+                android:layout_below="@+id/img_feedback"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_settings_tellafriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_tellFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/tell_friend" />
+
+            <com.app.noknok.customviews.MediumTextView
+                android:id="@+id/tv_tell_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_tellFriend"
+                android:text="@string/tell_a_friend" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right_new" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_tell_friend"
+                android:layout_below="@+id/img_tellFriend"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_settings_rateus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_rateus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/rate_us" />
+
+            <com.app.noknok.customviews.MediumTextView
+                android:id="@+id/tv_rateus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_rateus"
+                android:text="RATE US ON APP STORE" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right_new" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/tv_rateus"
+                android:layout_below="@+id/img_rateus"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGrey" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

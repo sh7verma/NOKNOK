@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.noknok">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signatureOrSystem" />
+
+    <application
+        android:name=".definitions.BaseClass"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme">
+
+
+        </activity>
+
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activities.CountryCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme">
+
+        </activity>
+
+        <activity
+            android:name=".activities.FriendsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".activities.DirectMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme" />
+        <activity
+            android:name=".activities.MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme" />
+
+        <activity
+            android:name=".activities.FriendsSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustNothing" />
+
+        <activity
+            android:name=".activities.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".activities.ConfessionsChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".activities.MessageTimelineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme" />
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme">
+        </activity>
+
+        <activity
+            android:name=".activities.GuessSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysVisible"
+            android:theme="@style/FriendsListTheme">
+
+        </activity>
+
+        <activity
+            android:name=".activities.MessageSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysVisible"
+            android:theme="@style/FriendsListTheme">
+
+        </activity>
+
+        <activity
+            android:name=".activities.ConfessionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConfessionsTheme" />
+
+        <activity
+            android:name=".activities.GuessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FriendsListTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e419aadd6fc1eb80ac53444d7c955369b5849d88" />
+
+
+        <service android:name=".services.FirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.LocationUpdaterService"
+            android:exported="false" />
+        <service
+            android:name=".services.FirebaseListenerService"
+            android:exported="false" />
+
+        <service
+            android:name=".services.FirebaseNotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".services.ConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".dialogs.RecordAudioTypeDialog"
+            android:theme="@style/Transparent"/>
+    </application>
+
+</manifest>
